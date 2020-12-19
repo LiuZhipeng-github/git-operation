@@ -18,7 +18,13 @@ $ git push --all
 
 $ git push --set-upstream origin test
 
-
-
 git push origin :master     ==   git push origin --delete master
+
+
+
+组合命令
+
+git checkout -b test3;git merge new;git push --all 将有新内容的分支更新到新建分支并合并，最后上传
+
+git add .;git commit -m 'up'
 
