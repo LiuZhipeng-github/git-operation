@@ -42,3 +42,10 @@ $ git add .;git commit -m 'up';git tag version1.0.3;git push --all;git push orig
 
 提交更新并打上版本号，更新到远端
 
+$ git merge test3;git tag version1.0.3;git push --all;git push origin --tag
+
+合并分支并打上版本号提交
+
+$ git add .;git commit -m 'up';git tag version2.0.1;git push --all;git push origin --tag;git push origin --delete version1.0.0
+
+提交更新并删除某个版本号
