@@ -38,7 +38,7 @@ $ git merge test3;git push --all;git checkout master;git push origin --delete te
 
 将test3的新内容合并到当前分支，然后提交所有，然后切换到主分支并删除test1分支（注意：必须要先切换到主分支才可以删除远端分支，而且切换到主分支前必须commit所有修改）
 
-$ git add .;git commit -m 'up';git tag version2.0.3;git push --all;git push origin --tag
+$ git add .;git commit -m 'up';git tag version2.0.5;git push --all;git push origin --tag
 
 提交更新并打上版本号，更新到远端
 
@@ -50,6 +50,6 @@ $ git add .;git commit -m 'up';git tag version2.0.1;git push --all;git push orig
 
 提交更新并删除某个版本号
 
-$ git checkout -b test;git merge new;git tag version2.0.2;git push --all;git push origin --tag;git push origin --delete version1.0.1
+$ git checkout -b test;git merge new;git tag -a version2.1.0;git push --all;git push origin version2.1.0 version;git push origin --delete version1.0.0
 
 创建新分支并合并更新版本号删除版本号到远端
