@@ -38,3 +38,5 @@ $ git merge test3;git push --all;git checkout master;git push origin --delete te
 
 将test3的新内容合并到当前分支，然后提交所有，然后切换到主分支并删除test1分支（注意：必须要先切换到主分支才可以删除远端分支，而且切换到主分支前必须commit所有修改）
 
+$ git add .;git commit -m 'up';git tag version1.0.2;git push --all;git push origin --tag
+
